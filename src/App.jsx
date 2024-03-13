@@ -1,9 +1,11 @@
 import CalculatorExample from "./Component/UseMemo/CalculatorExample";
+import LocationExample from "./Component/UseMemo/LocationExample";
 
 function App() {
   return (
     <div className="App">
-      <CalculatorExample />
+      {/* <CalculatorExample /> */}
+      <LocationExample />
     </div>
   );
 }
