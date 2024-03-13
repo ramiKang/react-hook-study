@@ -14,7 +14,7 @@ const easyCalculate = (number) => {
   return number + 1;
 };
 
-const UseMemoComponent = () => {
+const CalculatorExample = () => {
   const [hardNumber, setHardNumber] = useState(1);
   const [easyNumber, setEasyNumber] = useState(1);
 
@@ -50,4 +50,4 @@ const UseMemoComponent = () => {
   );
 };
 
-export default UseMemoComponent;
+export default CalculatorExample;

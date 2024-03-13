@@ -1,9 +1,9 @@
-import UseMemoComponent from "./Component/UseMemoComponent";
+import CalculatorExample from "./Component/UseMemo/CalculatorExample";
 
 function App() {
   return (
     <div className="App">
-      <UseMemoComponent />
+      <CalculatorExample />
     </div>
   );
 }
