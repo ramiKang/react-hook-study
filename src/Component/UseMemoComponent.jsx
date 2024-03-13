@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 
 const hardCalculate = (number) => {
   console.log("어려운 계산!");
@@ -18,7 +18,12 @@ const UseMemoComponent = () => {
   const [hardNumber, setHardNumber] = useState(1);
   const [easyNumber, setEasyNumber] = useState(1);
 
-  const hardSum = hardCalculate(hardNumber);
+  // const hardSum = hardCalculate(hardNumber);
+  /** Memoization */
+  const hardSum = useMemo(() => {
+    return hardCalculate(hardNumber);
+  }, [hardNumber]);
+
   const easySum = easyCalculate(easyNumber);
 
   return (
