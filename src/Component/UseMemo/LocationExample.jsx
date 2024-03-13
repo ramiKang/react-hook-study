@@ -20,6 +20,7 @@ const LocationExample = () => {
   // 렌더링 이전과 이후의 값을 비교해서 useEffect 안의 내용을 실행할까 말까 결정함
   useEffect(() => {
     console.log("useEffect 호출");
+    // 뭔가 오래 걸리는 작업
   }, [location]);
 
   return (
